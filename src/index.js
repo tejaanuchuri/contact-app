@@ -4,19 +4,24 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const people = [
-  { name : "teja" },
-  { name : "suresh" },
-  { name : "Gayathri" }
-]
+class ContactList extends React.Component {
+  render() {
+    const people = [
+      { name : "teja" },
+      { name : "suresh" },
+      { name : "Gayathri" }
+    ]
 
-const element =<ol>
-  people.map((person) => (
-    <li key={person.name}>{person.name}</li>
-  ))
-</ol>
+    return <ol>
+      {people.map((person) => (
+        <li key={person.name}>{person.name}</li>
+      ))}
+    </ol>
+  }
+}
+
 ReactDOM.render(
-  element,
+  <ContactList />,
   document.getElementById('root')
 );
 

@@ -10,11 +10,11 @@ const people = [
   { name : "gayathri" }
 ]
 
-const element = React.createElement('ol',null,
+const element =<ol>
   people.map((person) => (
-    React.createElement('li',null,person.name)
+    <li key={person.name}>{person.name}</li>
   ))
-)
+</ol>
 ReactDOM.render(
   element,
   document.getElementById('root')

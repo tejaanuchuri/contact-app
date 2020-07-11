@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 const people = [
   { name : "teja" },
   { name : "suresh" },
-  { name : "gayathri" }
+  { name : "Gayathri" }
 ]
 
 const element =<ol>

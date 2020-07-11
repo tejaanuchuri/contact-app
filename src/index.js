@@ -8,7 +8,7 @@ class ContactList extends React.Component {
   render() {
     const people = [
       { name : "teja" },
-      { name : "suresh" },
+      { name : "Suresh" },
       { name : "Gayathri" }
     ]
 
